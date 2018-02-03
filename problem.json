@@ -1,4 +1,14 @@
 {
+  "mandatoryInputConflicts":[],
+  "minFeeRate":75,
+  "consolidationFeeRate":5,
+  "fixedWeight":48,
+  "changeWeight":136,
+  "changeSpendWeight":592,
+  "minAbsoluteFee":0,
+  "maxInputsToSelect":3,
+  "minChangeAmount":100000,
+  "timeout":5,
   "inputs":[
     {
       "identifier":"dl_6",
@@ -236,15 +246,5 @@
       "amount":332500,
       "isMandatory":false
     }
-  ],
-  "mandatoryInputConflicts":[],
-  "minFeeRate":75,
-  "consolidationFeeRate":5,
-  "fixedWeight":48,
-  "changeWeight":136,
-  "changeSpendWeight":592,
-  "minAbsoluteFee":0,
-  "maxInputsToSelect":3,
-  "minChangeAmount":100000,
-  "timeout":5
+  ]
 }

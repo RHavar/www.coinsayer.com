@@ -1,5 +1,4 @@
 {
-  "mandatoryInputConflicts":[],
   "minFeeRate":75,
   "consolidationFeeRate":5,
   "fixedWeight":48,
@@ -9,6 +8,7 @@
   "maxInputsToSelect":3,
   "minChangeAmount":100000,
   "timeout":5,
+  "mandatoryInputConflicts":[["dl_155", "c_wl_148"], ["dl_155"]],
   "inputs":[
     {
       "identifier":"dl_6",

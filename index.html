@@ -155,6 +155,57 @@ The result of solving a problem, is a selection. For the sample problem, the sel
    <td>integer</td>
    <td>How much fees above what is strictly required (minFeeRate) has been "sacrificed" in order to avoid creating a change output.  This is strictly derived data, and you should never need this field, but you can use for debugging or what not</td>
 </tr>
+</table>
+<hr>
+coinsayer's coinselection is flexible enough to work with any bitcoin-like cryptocurrency, so things like weight are not hardcoded. However as it's main use is for bitcoin, here is a guide to how much different input and output types add to a transaction:
+<h3>bitcoin input weights</h3>
+<table border="1">
+  <tr>
+    <th>type</th><th>weight</th><th>comments</th>
+  </tr>
+  <tr>
+    <td>P2PKH</td>
+    <td>592</td>
+    <td>Due to ecdsa encoding this can occasionally be few bytes shorter</td>
+  </tr>
+  <tr>
+    <td>P2SH</td>
+    <td>???</td>
+    <td>It will depend on the exact type of script used</td>
+  </tr>
+  <tr>
+    <td>P2SH-P2WPKH</td>
+    <td>368</td>
+    <td>This is the segwit that is wrapped by p2sh</td>
+  </tr>
+  <tr>
+    <td>P2WPKH</td>
+    <td>?</td>
+    <td>TODO: ???</td>
+  </tr>
+</table>
+
+<h3>bitcoin output weights</h3>
+<table border="1">
+  <tr>
+    <th>type</th><th>weight</th><th>comments</th>
+  </tr>
+  <tr>
+    <td>P2SH</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>P2PK</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>P2WPKH</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 </body>
 </html>

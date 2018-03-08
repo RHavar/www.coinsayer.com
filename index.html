@@ -28,10 +28,10 @@
     </tr>
     <tr>
       <td>minFeeRate</td>
-      <td>integer</td>
+      <td>float</td>
       <td>This is expressed in <strong>satoshis per weight</strong> of the minimium
         feerate that would be considered acceptable for a transaction. Occasionally
-        the coin selection will create a transaction that pays a little more (when it is optimal to do so), but it'll never be below this. Note: bitcoind returns fee estimations in bitcoin per 1000 virtual bytes. So to convert to satoshis per weight, multiply by 1e8 (satoshis in a bitcoin) and then divide by 4000 (weight in a virtual 1000 bytes).
+        the coin selection will create a transaction that pays a little more (when it is optimal to do so), but it'll never be below this. Note: bitcoind returns fee estimations in bitcoin per 1000 virtual bytes. So to convert to satoshis per weight, multiply by 1e8 (satoshis in a bitcoin) and then divide by 4000 (weight in a virtual 1000 bytes). Also note, that <em>if you are not using an integer</em> rounding errors <em>will</em> occur.  Internally the coin selector uses mixed integer optimization techniques that require rounding to an integer on a per-input and per-output basis. So each input used will require round(minFeeRate * input.weight) of fees, and each output will require round(minFeeRate * output.weight) of fees. This could conceivably add up to a signifciant amount of rounding for a transaction.
       </td>
     </tr>
     <tr>
@@ -104,7 +104,7 @@
       <td>outputs</td>
       <td>array of Output's</td>
       <td>
-        A list of all outputs the transaction can or should have. Each Output has four fields: identifier, weight, amount, isMandatory. "identifier" is a string that uniquely identifies the output. "weight" says how much weight it would add to the transaction to send to that output. "amount" is the amount needed to be sent. "isMandatory" is says if the transaction must send to this output or not. In certain cases you might want to only send to someone if it not disadvantageous to do so. So for instance in batching sends, you might not have a hard requirement to include of them, which can often drastically improve coin selection.
+        A list of all outputs the transaction can or should have. Each Output has four fields: identifier, weight, amount, requirement. "identifier" is a string that uniquely identifies the output. "weight" says how much weight it would add to the transaction to send to that output. "amount" is the amount needed to be sent. "requirement" is says if the transaction must send to this output or not. There are three options: "M" for Mandatory (basically don't create the transaction unless it has this output). "P" for preferred (try include this output, but it's not essential) or "O" for optional. Which means it'll only include this output it it can improve the coin selection. So for instance in batching sends, you might not have a hard requirement to include of them, which can often drastically improve coin selection. When creating a batch transaction it for instance might make sense to make sends < X hours ago "optional", and if they're older than that "preferred" and finally if it's essential they be sent, make them "mandatory".
       </td>
     </tr>
 

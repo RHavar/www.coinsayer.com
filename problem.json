@@ -12,133 +12,111 @@
   "inputs":[
     {
       "identifier":"dl_6",
-      "confirmations":0,
       "weight":592,
       "amount":14860
     },
     {
       "identifier":"dl_154",
-      "confirmations":0,
       "weight":592,
       "amount":100000
     },
     {
       "identifier":"dl_92",
-      "confirmations":0,
       "weight":592,
       "amount":76900
     },
     {
       "identifier":"c_wl_131",
-      "confirmations":0,
       "weight":592,
       "amount":101100
     },
     {
       "identifier":"dl_47",
-      "confirmations":0,
       "weight":592,
       "amount":100000
     },
     {
       "identifier":"dl_150",
-      "confirmations":0,
       "weight":592,
       "amount":6080
     },
     {
       "identifier":"c_wl_153",
-      "confirmations":0,
       "weight":592,
       "amount":131600
     },
     {
       "identifier":"dl_27",
-      "confirmations":0,
       "weight":592,
       "amount":10000
     },
     {
       "identifier":"dl_7",
-      "confirmations":0,
       "weight":592,
       "amount":14860
     },
     {
       "identifier":"dl_156",
-      "confirmations":0,
       "weight":592,
       "amount":100000
     },
     {
       "identifier":"dl_42",
-      "confirmations":0,
       "weight":592,
       "amount":10863
     },
     {
       "identifier":"c_wl_142",
-      "confirmations":0,
       "weight":592,
       "amount":151600
     },
     {
       "identifier":"dl_86",
-      "confirmations":0,
       "weight":592,
       "amount":11000
     },
     {
       "identifier":"c_wl_148",
-      "confirmations":0,
       "weight":592,
       "amount":211600
     },
     {
       "identifier":"dl_44",
-      "confirmations":0,
       "weight":592,
       "amount":200
     },
     {
       "identifier":"dl_46",
-      "confirmations":0,
       "weight":592,
       "amount":100000
     },
     {
       "identifier":"dl_149",
-      "confirmations":0,
       "weight":592,
       "amount":100000
     },
     {
       "identifier":"dl_45",
-      "confirmations":0,
       "weight":592,
       "amount":100
     },
     {
       "identifier":"dl_140",
-      "confirmations":0,
       "weight":592,
       "amount":116387
     },
     {
       "identifier":"c_wl_152",
-      "confirmations":0,
       "weight":592,
       "amount":211400
     },
     {
       "identifier":"dl_155",
-      "confirmations":0,
       "weight":592,
       "amount":444318
     },
     {
       "identifier":"dl_88",
-      "confirmations":0,
       "weight":592,
       "amount":34660
     }
@@ -148,103 +126,103 @@
       "identifier":"wl_158",
       "weight":136,
       "amount":375998,
-      "isMandatory":true
+      "requirement":"M"
     },
     {
       "identifier":"wl_138",
       "weight":136,
       "amount":333000,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_130",
       "weight":136,
       "amount":333000,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_113",
       "weight":136,
       "amount":332500,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_132",
       "weight":136,
       "amount":332500,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_123",
       "weight":136,
       "amount":332700,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_139",
       "weight":136,
       "amount":332500,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_125",
       "weight":136,
       "amount":332700,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_128",
       "weight":136,
       "amount":932800,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_133",
       "weight":136,
       "amount":300000,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_109",
       "weight":136,
       "amount":333000,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_112",
       "weight":136,
       "amount":333500,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_120",
       "weight":136,
       "amount":332500,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_157",
       "weight":136,
       "amount":1500000,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_110",
       "weight":136,
       "amount":332500,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_114",
       "weight":136,
       "amount":332500,
-      "isMandatory":false
+      "requirement":"O"
     },
     {
       "identifier":"wl_111",
       "weight":136,
       "amount":332500,
-      "isMandatory":false
+      "requirement":"O"
     }
   ]
 }
